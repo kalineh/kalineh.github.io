@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kalin.games</title>
-<meta name="description" content="Games by Kalin: Ashigaru Tactics, Dragonwake, Solspire, Azemar Online and the Japanese Reader.">
+<meta name="description" content="Games by Kalin: Ashigaru Tactics, Dragonwake, Solspire, Azemar Online, Croppy Boy, Puzzle Cafe VR and the Japanese Reader.">
 <meta name="theme-color" content="#0b1628">
 <link rel="canonical" href="https://kalin.games/">
 <link rel="alternate" hreflang="en" href="https://kalin.games/">
@@ -115,6 +115,7 @@
     -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); pointer-events: none;
   }
   .btn:hover { background: var(--btn-hover); transform: translateY(-1px); }
+  .btn.disabled { background: #5d6b82; color: #c3cbd8; opacity: .55; filter: grayscale(1); cursor: default; pointer-events: none; box-shadow: none; }
   .btn svg { width: 15px; height: 15px; fill: currentColor; }
   .capsule.plain { background: linear-gradient(110deg, var(--card) 35%, #24457a 100%); }
   @media (max-width: 640px) {
@@ -155,7 +156,7 @@
     <div class="body">
       <h2>Ashigaru Tactics</h2>
       <p>Run a Sengoku-era mercenary company in deep hex tactics. Think Battle Brothers with the best mods built in.</p>
-      <div class="links"><a class="btn" href="https://store.steampowered.com/app/3038710/">Steam</a><span class="note">Play now</span></div>
+      <div class="links"><a class="btn" href="https://store.steampowered.com/app/3038710/">Steam</a><a class="btn disabled" aria-disabled="true">Android</a></div>
     </div>
   </article>
 
@@ -164,7 +165,7 @@
     <div class="body">
       <h2>Dragonwake</h2>
       <p>An old-school D&amp;D-inspired roguelike of spells, quests and deadly dungeons. Play with sprite graphics or classic ASCII.</p>
-      <div class="links"><a class="btn" href="https://store.steampowered.com/app/4607490/">Steam</a><span class="note">Play now</span></div>
+      <div class="links"><a class="btn" href="https://store.steampowered.com/app/4607490/">Steam</a><a class="btn disabled" aria-disabled="true">Android</a></div>
     </div>
   </article>
 
@@ -185,6 +186,24 @@
       <h2>Azemar Online</h2>
       <p>A classic old-school MMO for browser and PC. No account needed.</p>
       <div class="links"><a class="btn" href="/mmo/">Play now</a></div>
+    </div>
+  </article>
+
+  <article class="capsule" data-android="">
+    <img src="img/croppy-boy.jpg" width="1200" height="400" alt="Croppy Boy: the farmer at a cartoon seed shop counter" loading="lazy" decoding="async">
+    <div class="body">
+      <h2>Croppy Boy</h2>
+      <p>A sandbox multiplayer farming sim with no rules. Play online with friends or offline on your own.</p>
+      <div class="links"><a class="btn" href="https://store.steampowered.com/app/1369400/">Steam</a><span class="note">Play now</span></div>
+    </div>
+  </article>
+
+  <article class="capsule" data-android="">
+    <img src="img/puzzle-cafe-vr.jpg" width="1200" height="400" alt="Puzzle Cafe VR: a cozy cafe with a cat and a jigsaw puzzle on the table" loading="lazy" decoding="async">
+    <div class="body">
+      <h2>Puzzle Cafe VR</h2>
+      <p>A relaxing jigsaw puzzle game made for VR. Solve puzzles in a cozy cafe, complete challenges and upgrade the scenery.</p>
+      <div class="links"><a class="btn" href="https://store.steampowered.com/app/1659760/">Steam</a><span class="note">Play now</span></div>
     </div>
   </article>
 
