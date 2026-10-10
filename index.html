@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kalin.games</title>
-<meta name="description" content="Games by Kalin: Ashigaru Tactics, Dragonwake, Solspire, MMOA and the Japanese Reader.">
+<meta name="description" content="Games by Kalin: Ashigaru Tactics, Dragonwake, Solspire, Azemar Online and the Japanese Reader.">
 <meta name="theme-color" content="#0b1628">
 <link rel="canonical" href="https://kalin.games/">
 <link rel="alternate" hreflang="en" href="https://kalin.games/">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kalin.games/">
 <meta property="og:title" content="kalin.games">
-<meta property="og:description" content="Games by Kalin: Ashigaru Tactics, Dragonwake, Solspire and more.">
+<meta property="og:description" content="Games by Kalin: Ashigaru Tactics, Dragonwake, Solspire, Azemar Online and more.">
 <meta property="og:image" content="https://kalin.games/img/ashigaru.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="400">
@@ -105,6 +105,8 @@
     background: var(--btn); color: var(--btn-text); font-weight: 600; font-size: .93rem;
     box-shadow: 0 2px 8px rgba(5, 12, 28, .35); transition: background .15s, transform .15s;
   }
+  .links { align-items: center; }
+  .note { font-size: .88rem; color: #9fb3d4; opacity: .85; margin-left: 4px; text-shadow: var(--text-shadow); }
   .btn:hover { background: var(--btn-hover); transform: translateY(-1px); }
   .btn svg { width: 15px; height: 15px; fill: currentColor; }
   .capsule.plain { background: linear-gradient(110deg, var(--card) 35%, #24457a 100%); }
@@ -146,7 +148,7 @@
     <div class="body">
       <h2>Ashigaru Tactics</h2>
       <p>Run a Sengoku-era mercenary company in deep hex tactics. Think Battle Brothers with the best mods built in.</p>
-      <div class="links"><a class="btn" href="https://store.steampowered.com/app/3038710/">Steam</a></div>
+      <div class="links"><a class="btn" href="https://store.steampowered.com/app/3038710/">Steam</a><span class="note">Play now</span></div>
     </div>
   </article>
 
@@ -155,7 +157,7 @@
     <div class="body">
       <h2>Dragonwake</h2>
       <p>An old-school D&amp;D-inspired roguelike of spells, quests and deadly dungeons. Play with sprite graphics or classic ASCII.</p>
-      <div class="links"><a class="btn" href="https://store.steampowered.com/app/4607490/">Steam</a></div>
+      <div class="links"><a class="btn" href="https://store.steampowered.com/app/4607490/">Steam</a><span class="note">Play now</span></div>
     </div>
   </article>
 
@@ -164,20 +166,21 @@
     <div class="body">
       <h2>Solspire</h2>
       <p>A voxel adventure to reach the distant Solspire. Make the long journey alone or with friends.</p>
-      <div class="links"><a class="btn" href="https://store.steampowered.com/app/5024320/">Steam</a></div>
+      <div class="links"><a class="btn" href="https://store.steampowered.com/app/5024320/">Steam</a><span class="note">Play now</span></div>
     </div>
   </article>
 
   <article class="capsule">
-    <img src="img/mmoa.jpg" width="1200" height="400" alt="MMOA: giant trees over a grassy meadow" loading="lazy" decoding="async">
+    <img src="img/mmoa.jpg" width="1200" height="400" alt="Azemar Online: giant trees over a grassy meadow" loading="lazy" decoding="async">
     <div class="body">
-      <h2>MMOA</h2>
-      <p>A browser MMO built for the open web. Jump straight in, no install needed.</p>
-      <div class="links"><a class="btn" href="/mmo/">Play</a></div>
+      <h2>Azemar Online</h2>
+      <p>A classic old-school MMO for browser and PC. No account needed.</p>
+      <div class="links"><a class="btn" href="/mmo/">Play now</a></div>
     </div>
   </article>
 
-  <article class="capsule" data-android="https://play.google.com/store/apps/details?id=com.dev.japanesereader.shell">
+  <!-- Japanese Reader Android (not live yet): https://play.google.com/store/apps/details?id=com.dev.japanesereader.shell -->
+  <article class="capsule" data-android="">
     <img class="pos-right" src="img/japanese-reader.jpg" width="1200" height="400" alt="Japanese Reader: a graded N5 story with tappable kanji" loading="lazy" decoding="async">
     <div class="body">
       <h2>Japanese Reader</h2>
@@ -194,7 +197,8 @@
     if (!url) return;
     var a = document.createElement('a');
     a.className = 'btn'; a.href = url; a.textContent = 'Android';
-    c.querySelector('.links').appendChild(a);
+    var l = c.querySelector('.links'), first = l.querySelector('.btn');
+    l.insertBefore(a, first ? first.nextSibling : null);
   });
 </script>
 </body>
