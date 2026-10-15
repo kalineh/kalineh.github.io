@@ -9,6 +9,7 @@
 <link rel="canonical" href="https://kalin.games/">
 <link rel="alternate" hreflang="en" href="https://kalin.games/">
 <link rel="alternate" hreflang="ja" href="https://kalin.games/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://kalin.games/zh/">
 <link rel="alternate" hreflang="x-default" href="https://kalin.games/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kalin.games/">
@@ -65,7 +66,7 @@
   }
   .xlink:hover { background: #1f3760; border-color: #4a6ea8; }
   .nav { display: flex; align-items: center; gap: 10px; }
-  .lang { font-weight: 600; }
+  .lang { font-weight: 600; white-space: nowrap; }
   .xlink svg { width: 17px; height: 17px; fill: currentColor; }
   main {
     max-width: 880px; margin: 0 auto; padding: 8px 18px 56px;
@@ -127,7 +128,9 @@
     header { padding: 16px 16px; }
     .brand { font-size: 1.35rem; }
     .xlink { padding: 7px 12px; font-size: .95rem; }
-    .nav { gap: 8px; }
+    .nav { gap: 6px; }
+    .xlink.lang { padding: 7px 10px; white-space: nowrap; }
+    header { flex-wrap: wrap; gap: 10px; }
     main { gap: 16px; padding: 4px 14px 40px; }
     .capsule { flex-direction: column; align-items: stretch; min-height: 0; }
     .capsule img {
@@ -147,6 +150,7 @@
   <a class="brand" href="/">kalin.games</a>
   <nav class="nav">
     <a class="xlink lang" href="/ja/" hreflang="ja" lang="ja">日本語</a>
+    <a class="xlink lang" href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
     <a class="xlink" href="https://x.com/kalin_t" rel="me">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
       @kalin_t
