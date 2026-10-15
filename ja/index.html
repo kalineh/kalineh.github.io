@@ -68,6 +68,7 @@
   .xlink:hover { background: #1f3760; border-color: #4a6ea8; }
   .nav { display: flex; align-items: center; gap: 10px; }
   .lang { font-weight: 600; white-space: nowrap; }
+  .lang.current { background: #2a4370; border-color: #5b80bd; color: #fff; cursor: default; }
   .xlink svg { width: 17px; height: 17px; fill: currentColor; }
   main {
     max-width: 880px; margin: 0 auto; padding: 8px 18px 56px;
@@ -153,6 +154,7 @@
   <a class="brand" href="/">kalin.games</a>
   <nav class="nav">
     <a class="xlink lang" href="/" hreflang="en" lang="en">English</a>
+    <span class="xlink lang current" lang="ja" aria-current="page">日本語</span>
     <a class="xlink lang" href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
     <a class="xlink" href="https://x.com/kalin_t" rel="me">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
