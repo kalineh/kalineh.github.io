@@ -1,0 +1,5 @@
+/* Publisher wordmark, shared by the landing, loading and player-card pages. */
+.kalin-brand{display:inline-flex;align-items:center;width:max-content;font:700 13px/1.2 "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;letter-spacing:.02em;text-transform:none;white-space:nowrap;color:#a9c8f5;text-decoration:none}
+.kalin-brand:hover{color:#dce9ff}.kalin-brand:focus-visible{outline:2px solid #a9c8f5;outline-offset:4px}
+.kalin-corner{position:absolute;top:12px;left:14px;z-index:2;padding:5px 8px;border:1px solid #b9b19544;border-radius:3px;background:#06080bb3;text-shadow:0 1px 3px #000}
+.embedded .kalin-corner{display:none}
