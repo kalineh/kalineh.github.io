@@ -57,9 +57,6 @@
     display: flex; align-items: center; justify-content: space-between;
     padding: 22px clamp(18px, 3vw, 36px);
   }
-  .brand {
-    font: var(--tw) 1.6rem/1 var(--serif); letter-spacing: .2px; text-decoration: none; color: #a9c8f5;
-  }
   .xlink {
     display: inline-flex; align-items: center; gap: 9px; text-decoration: none;
     font-weight: 600; font-size: 1.02rem; color: var(--text);
@@ -67,7 +64,8 @@
     background: rgba(23, 41, 74, .6); transition: background .15s, border-color .15s;
   }
   .xlink:hover { background: #1f3760; border-color: #4a6ea8; }
-  .nav { display: flex; align-items: center; gap: 10px; }
+  .nav { display: flex; align-items: center; justify-content:flex-end; flex-wrap:wrap; max-width:100%; gap:10px; }
+  header.kalin-header .xlink { height:36px; padding:0 12px; }
   .lang { font-weight: 600; white-space: nowrap; }
   .lang.current { background: #2a4370; border-color: #5b80bd; color: #fff; cursor: default; }
   .xlink svg { width: 17px; height: 17px; fill: currentColor; }
@@ -131,7 +129,6 @@
   .capsule.plain { background: linear-gradient(110deg, var(--card) 35%, #24457a 100%); }
   @media (max-width: 640px) {
     header { padding: 16px 16px; }
-    .brand { font-size: 1.35rem; }
     .xlink { padding: 7px 12px; font-size: .95rem; }
     .nav { gap: 6px; }
     .xlink.lang { padding: 7px 10px; white-space: nowrap; }
@@ -152,8 +149,8 @@
 </style>
 </head>
 <body>
-<header>
-  <a class="brand kalin-brand" href="https://kalin.games/">kalin.games</a>
+<header class="kalin-header">
+  <a class="kalin-brand" href="https://kalin.games/">kalin.games</a>
   <nav class="nav">
     <a class="xlink lang" href="/" hreflang="en" lang="en">English</a>
     <span class="xlink lang current" lang="ja" aria-current="page">日本語</span>

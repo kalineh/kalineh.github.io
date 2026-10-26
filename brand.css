@@ -1,5 +1,8 @@
-/* Publisher wordmark, shared by the landing, loading and player-card pages. */
-.kalin-brand{display:inline-flex;align-items:center;width:max-content;font:700 13px/1.2 "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;letter-spacing:.02em;text-transform:none;white-space:nowrap;color:#a9c8f5;text-decoration:none}
-.kalin-brand:hover{color:#dce9ff}.kalin-brand:focus-visible{outline:2px solid #a9c8f5;outline-offset:4px}
-.kalin-corner{position:absolute;top:12px;left:14px;z-index:2;padding:5px 8px;border:1px solid #b9b19544;border-radius:3px;background:#06080bb3;text-shadow:0 1px 3px #000}
-.embedded .kalin-corner{display:none}
+/* Fixed publisher capsule and header alignment, shared across the game sites. */
+.kalin-brand{box-sizing:border-box;display:inline-flex;flex:none;align-items:center;justify-content:center;width:128px;height:36px;margin:0;padding:0 12px;border:1px solid #405571;border-radius:999px;background:#172638;color:#c3d7f4;font:600 15px/1 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:0;text-transform:none;text-decoration:none;white-space:nowrap}
+.kalin-brand:hover{background:#203550;border-color:#7799c4;color:#fff}.kalin-brand:focus-visible{outline:2px solid #a9c8f5;outline-offset:3px}
+header.kalin-header{box-sizing:border-box;display:flex;align-items:flex-start;gap:16px;min-height:68px;width:auto;max-width:none;margin:0;padding:16px}
+.kalin-heading{display:flex;align-items:flex-start;gap:16px;min-width:0}.kalin-title{display:flex;align-items:center;min-height:36px;margin:0;font:700 26px/1.2 Georgia,serif;letter-spacing:.02em;text-decoration:none}
+.kalin-header nav{display:flex;align-items:center;min-height:36px;margin-left:auto}
+.kalin-corner{position:absolute;top:16px;left:16px;z-index:2}.embedded .kalin-corner{display:none}
+@media(max-width:640px){header.kalin-header{flex-wrap:wrap;gap:12px}.kalin-heading{gap:12px}.kalin-title{font-size:18px}}
